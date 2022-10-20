@@ -46,7 +46,13 @@ public class Main {
             robby.putCoin();
         }
         robby.turnLeft();
-        robby.move();
+        for (int j; j < 4 ; j++ ){
+            robby.move();
+            robby.putCoin();
+            robby.turnLeft();
+            robby.move();
+            robby.turnRight();
+        }
         crash(); // TODO: H4 - remove if implemented
     }
 }
